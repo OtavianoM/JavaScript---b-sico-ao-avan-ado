@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Js Operadores</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <script>
+    
+        var name  = 'Otaviano Marques'
+
+        // operadores arithmetics
+        // operador + na string concatena e solto, é uma soma
+        var totalSum = 5 + 5
+        var totalSub = 8 - 5
+        var totalMult = 2 * 2
+        var totalDiv = 4 / 2 
+        var restoDiv = 10%3 // modulo, resto da div
+        var increment = 10
+        increment ++ // increment
+        var decrement = 15
+        decrement -- // decrement
+
+        totalSum += 5
+
+        totalMult *= 2
+
+        console.log(totalSum, totalSub, totalMult, totalDiv)// saida terminal(back)
+        alert(totalMult) // sainda front
+
+        //comparison
+
+        var a = 50
+        var b = '50'
+
+        var c = a === b   //Compara valores e tipo. Nao igualdade, diferete? yes ou not?
+        // olhando em cima, os valores sao iguais. Mas o tipo é diferente, String e int
+
+        //var c = a === b  o === compara valores e o tipo da variavel
+       
+        //var c = a == b   o == compara apenas valores
+        
+        //var c = a != b     nao igualdade, diferete? yes ou not?
+
+        console.log(c) 
+
+        // logical
+        // && and
+        // || or
+        // ! not
+
+        var l = (a > totalSum) || !(b > totalSub)
+        console.log(l)
+        
+    </script>
+</body>
+</html>

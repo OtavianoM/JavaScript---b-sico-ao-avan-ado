@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var i = 0
+		var str = ''
+
+		//procurar trabalhar com no maximo 2 if e de 1 a 3 laços de repeticao
+		//procurar manter o mais simples e organizado possivel
+		//simples e organizado == bom codigo
+		do {
+			if (i <= 3) {
+				console.log('Is less than 5')
+			} else {
+				str += i // Me pegou tambem, aqui nao sera realizado uma soma e sim, uma concatenacao
+			}
+			i++			
+		} while(i <= 5) // cuidado com o loop infinito
+
+		// while (i <= 5) {
+		// 	if (i <= 3) {
+		// 		console.log('Is less than 5')
+		// 	} else {
+		// 		str += i
+		// 	}
+		// 	i++
+		// }
+
+		console.log(str)
+		console.log('Script running')
+	</script>
+</body>
+</html>

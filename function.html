@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		//procedimento apenas executa
+		function sayHello() {
+			console.log('Hello from Function - School of net')
+		}
+		var a = sayHello()
+		console.log(a)
+
+		//funcao executa e retorna algo
+		// var number = 4
+		// function square() {
+		// 	return number * number
+		// }
+		// var b = square() // aqui é feito uma referencia para chamar a funcao e seu retorno
+		// var c = square()
+		// console.log(b, c) // aqui é a saida do retorno de b e c, que daria 16 para ambos...
+
+		var num = 50 
+		var num = 10 //escopo global, preferencia de execucao, sempre a ultima variavel declarada.
+
+		function square(num) { // funcao parametrizada. 
+			var num = 4 // escopo individual - criado pela funcao
+			return num * num
+		}
+
+		var d = square(3) // E ai? Vai sair o quadrado de 3 or 5 or 10 or 4?
+		console.log(d)
+
+		// function quadrado(num){
+		// 	return num * num
+		// }
+
+		// var qd = prompt('O quadrado de: ')
+		// console.log(quadrado(qd))
+	</script>
+</body>
+</html>
